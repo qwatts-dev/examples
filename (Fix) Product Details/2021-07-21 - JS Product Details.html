@@ -1,0 +1,54 @@
+<!--
+*
+*
+Name: QW Fix 'See More' Btn
+Version: 0.0.3
+Author: Quentin Watts
+*
+*
+-->
+<script>
+  function heightCheck(data_target){
+    console.log("heightCheck() running");
+    setTimeout( function(){
+      var h;
+      var tabpanel;
+
+       //get panels TEXT
+       if (data_target){
+        tabpanel = document.querySelector(data_target+ ' [data-type="information-content-text"]');
+      } else if (!data_target) {
+        tabpanel = document.querySelector('#product-details-information-tab-0 [data-type="information-content-text"]'); //direct select tab panel
+        console.log('#product-details-information-tab-0 loaded');
+      } else {
+        //do nothing
+      }
+
+      //get height
+      h = tabpanel.offsetHeight;
+      console.log(h);
+
+      //hide/show "see more" btn based on content height
+      var see_more = document.querySelector(".product-details-information-tab-action");
+      if (h < 415) {
+        see_more.style.display = "none";
+      } else if (h >= 415){
+        see_more.removeAttribute("style");
+      }
+    }, 10); /*end setTimeout*/
+  }
+  heightCheck();
+
+  //select all tabs
+  var tabs = document.querySelectorAll('[data-action="selected-tab"]');
+
+  //for each tab
+  var i;
+  for (i = 0; i < tabs.length; i++) {
+    //on click
+    tabs[i].onclick = function(){ 
+      var data_target = this.getAttribute("data-target");
+      heightCheck(data_target);
+    };
+  }
+</script>
