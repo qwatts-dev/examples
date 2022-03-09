@@ -1,0 +1,29 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+.main-info-card {
+    @extend .info-card;
+}
+
+.main-info-card-content {
+    @extend .info-card-content;
+    color: $sc-color-secondary;
+    font-weight: bold;
+}
+
+.qw-b2b-additional-copy {
+	background: #efefef;
+    border: 1px solid #CCC !important;
+    border-right: none !important;
+    border-left: none !important;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 5px;
+}

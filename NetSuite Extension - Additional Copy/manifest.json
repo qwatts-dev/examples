@@ -1,0 +1,102 @@
+{
+    "name": "QWB2BAdditionalCopy",
+    "fantasyName": "QW B2B Additional Copy",
+    "vendor": "QWatts",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "QWatts extension to add additional copy to items from reps catalog files.",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/Main.Service.ss"
+            ]
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/Main/Sass/_qwb2badditionalcopy-main.scss",
+            "myaccount": "Modules/Main/Sass/_qwb2badditionalcopy-main.scss",
+            "checkout": "Modules/Main/Sass/_qwb2badditionalcopy-main.scss"
+        },
+        "files": [
+            "Modules/Main/Sass/_qwb2badditionalcopy-main.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Main/Templates/qwatts_qwb2badditionalcopy_main.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/Main/Templates/qwatts_qwb2badditionalcopy_main.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/Main/Templates/qwatts_qwb2badditionalcopy_main.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/Main/JavaScript/QWatts.QWB2BAdditionalCopy.Main.js",
+            "myaccount": "Modules/Main/JavaScript/QWatts.QWB2BAdditionalCopy.Main.js",
+            "checkout": "Modules/Main/JavaScript/QWatts.QWB2BAdditionalCopy.Main.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Main/JavaScript/QWatts.QWB2BAdditionalCopy.Main.js",
+                    "Modules/Main/JavaScript/Main.View.js",
+                    "Modules/Main/JavaScript/QWatts.QWB2BAdditionalCopy.Main.Model.js",
+                    "Modules/Main/JavaScript/QWatts.QWB2BAdditionalCopy.Main.SS2Model.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/Main/JavaScript/QWatts.QWB2BAdditionalCopy.Main.js",
+                    "Modules/Main/JavaScript/Main.View.js",
+                    "Modules/Main/JavaScript/QWatts.QWB2BAdditionalCopy.Main.Model.js",
+                    "Modules/Main/JavaScript/QWatts.QWB2BAdditionalCopy.Main.SS2Model.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/Main/JavaScript/QWatts.QWB2BAdditionalCopy.Main.js",
+                    "Modules/Main/JavaScript/Main.View.js",
+                    "Modules/Main/JavaScript/QWatts.QWB2BAdditionalCopy.Main.Model.js",
+                    "Modules/Main/JavaScript/QWatts.QWB2BAdditionalCopy.Main.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/Main/SuiteScript/QWatts.QWB2BAdditionalCopy.Main.js",
+        "files": [
+            "Modules/Main/SuiteScript/QWatts.QWB2BAdditionalCopy.Main.js",
+            "Modules/Main/SuiteScript/Main.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\QWB2BAdditionalCopy",
+    "suitescript2": {
+        "files": [
+            "Modules/Main/SuiteScript2/Main.Service.ss"
+        ]
+    }
+}
